@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iL7-G7-dBT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animals-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Animals" customClass="ViewController" customModule="Animals" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U5G-s1-O9F">
+                                <rect key="frame" x="0.0" y="114" width="320" height="454"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="120" id="chm-x9-HAu" customClass="CustomTableViewCell" customModule="Animals" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="chm-x9-HAu" id="3rv-08-XQL">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRQ-JX-f4C">
+                                                    <rect key="frame" x="5" y="5" width="365" height="110"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tiger" translatesAutoresizingMaskIntoConstraints="NO" id="N59-tC-GEF">
+                                                            <rect key="frame" x="5" y="1" width="90" height="90"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="90" id="lM2-rl-17T"/>
+                                                                <constraint firstAttribute="height" constant="90" id="yh1-J7-u1t"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p49-i9-uK7">
+                                                            <rect key="frame" x="100" y="5" width="260" height="100"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="p49-i9-uK7" firstAttribute="leading" secondItem="N59-tC-GEF" secondAttribute="trailing" constant="5" id="5MA-bo-iZ0"/>
+                                                        <constraint firstItem="N59-tC-GEF" firstAttribute="leading" secondItem="oRQ-JX-f4C" secondAttribute="leading" constant="5" id="7wX-2m-Wrr"/>
+                                                        <constraint firstItem="N59-tC-GEF" firstAttribute="top" secondItem="oRQ-JX-f4C" secondAttribute="top" constant="1" id="JzH-4i-dE6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="p49-i9-uK7" secondAttribute="trailing" constant="5" id="ffn-3Z-SeH"/>
+                                                        <constraint firstAttribute="bottom" secondItem="p49-i9-uK7" secondAttribute="bottom" constant="5" id="ixl-IJ-ghp"/>
+                                                        <constraint firstItem="p49-i9-uK7" firstAttribute="top" secondItem="oRQ-JX-f4C" secondAttribute="top" constant="5" id="vg2-NJ-cFm"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="oRQ-JX-f4C" firstAttribute="leading" secondItem="3rv-08-XQL" secondAttribute="leading" constant="5" id="CEp-UV-0lg"/>
+                                                <constraint firstAttribute="bottom" secondItem="oRQ-JX-f4C" secondAttribute="bottom" constant="5" id="TCR-2O-H56"/>
+                                                <constraint firstAttribute="trailing" secondItem="oRQ-JX-f4C" secondAttribute="trailing" constant="5" id="ZZc-tP-9ze"/>
+                                                <constraint firstItem="oRQ-JX-f4C" firstAttribute="top" secondItem="3rv-08-XQL" secondAttribute="top" constant="5" id="u29-be-ubx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="animalImage" destination="N59-tC-GEF" id="gV8-I9-AUl"/>
+                                            <outlet property="animalLbl" destination="p49-i9-uK7" id="R1e-0P-Vkc"/>
+                                            <outlet property="cellView" destination="oRQ-JX-f4C" id="uHI-Od-aha"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dtZ-fn-qBs"/>
+                    <connections>
+                        <outlet property="tableView" destination="U5G-s1-O9F" id="Ztf-6M-MQE"/>
+                        <segue destination="hZ3-Z3-nuH" kind="show" identifier="makingtransition" id="Z72-8b-9Ul"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" userLabel="Animals" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714.375" y="-12.67605633802817"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Mc1-1F-0fU">
+            <objects>
+                <viewController id="hZ3-Z3-nuH" customClass="SecondViewController" customModule="Animals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i2u-aa-R8C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fya-rU-OyU">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fya-rU-OyU" firstAttribute="leading" secondItem="fdx-ta-DJ1" secondAttribute="leading" id="N0a-dn-7AN"/>
+                            <constraint firstItem="fya-rU-OyU" firstAttribute="trailing" secondItem="fdx-ta-DJ1" secondAttribute="trailing" id="UwB-5d-ZRF"/>
+                            <constraint firstItem="fya-rU-OyU" firstAttribute="top" secondItem="fdx-ta-DJ1" secondAttribute="top" id="W6c-t4-Fwr"/>
+                            <constraint firstItem="fya-rU-OyU" firstAttribute="bottom" secondItem="fdx-ta-DJ1" secondAttribute="bottom" id="a77-2B-09g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fdx-ta-DJ1"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="fya-rU-OyU" id="zTt-1U-BYK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZI-TY-Zp9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1387.5" y="-17.95774647887324"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kfP-59-8l5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iL7-G7-dBT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5oQ-rx-bOB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Lyy-aB-l7K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44n-N1-kKT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-283.125" y="-12.67605633802817"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tiger" width="960" height="640"/>
+    </resources>
+</document>
